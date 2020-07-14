@@ -1,0 +1,70 @@
+#nprogress .bar {
+	height: 2px !important;
+	background: #063b00 !important;
+}
+
+body {
+	/* font-family: "Open Sans", sans-serif; */
+	font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* font-family: "Roboto", sans-serif; */
+	font-family: "Montserrat", sans-serif;
+}
+
+.nav-bar {
+	/* font-family: "Roboto", sans-serif; */
+	font-family: "Montserrat", sans-serif;
+}
+
+.card {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.form-check-input :checked ~ {
+	background-color: #5bc0de !important;
+}
+
+/* .active {
+	background-color: #5cb85c !important;
+	border-color: #5cb85c !important ;
+} */
+
+@media (min-width: 34em) {
+	.card-columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media (min-width: 48em) {
+	.card-columns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+}
+
+@media (min-width: 62em) {
+	.card-columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+
+@media (min-width: 75em) {
+	.card-columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
