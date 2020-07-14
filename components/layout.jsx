@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
 						</Link>
 					</Nav>
 					<Nav>
-						{!isAuth() && (
+						{process.browser && !isAuth() && (
 							<React.Fragment>
 								<Link href="/login" passHref>
 									<Nav.Link>Login</Nav.Link>
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
 								</Link>
 							</React.Fragment>
 						)}
-						{isAuth() && isAuth().role === "admin" && (
+						{process.browser && isAuth() && isAuth().role === "admin" && (
 							<Link href="/admin" passHref>
 								<Nav.Link>
 									<strong>{isAuth().name}</strong>
@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
 							</Link>
 						)}
 
-						{isAuth() && isAuth().role === "subscriber" && (
+						{process.browser && isAuth() && isAuth().role === "subscriber" && (
 							<Link href="/user" passHref>
 								<Nav.Link>
 									<strong>{isAuth().name}</strong>
@@ -82,7 +82,9 @@ const Layout = ({ children }) => {
 							</Link>
 						)}
 
-						{isAuth() && <Nav.Link onClick={logout}>Logout</Nav.Link>}
+						{process.browser && isAuth() && (
+							<Nav.Link onClick={logout}>Logout</Nav.Link>
+						)}
 
 						{/* <Nav.Link>
 							<strong>User</strong>

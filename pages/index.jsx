@@ -85,7 +85,7 @@ const Home = ({ categories }) => {
 		<React.Fragment>
 			<Layout>
 				<h1>Welcome to Dev's Book!</h1>
-				<h6>Your one stop shop to every thing CS related!</h6>
+				<h6>Your one stop shop to everything CS related!</h6>
 
 				{/* <Row> */}
 				<CardColumns>{listCategories()}</CardColumns>
