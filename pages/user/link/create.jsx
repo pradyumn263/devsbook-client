@@ -48,7 +48,7 @@ const Create = ({ token }) => {
 		console.table({ title, url, categories, type, medium });
 
 		try {
-			const response = axios.post(
+			const response = await axios.post(
 				`${API}/link`,
 				{
 					title,
